@@ -10,3 +10,4 @@ phpunit.xml
 /yarn.lock
 Thumbs.db
 /.php-cs-fixer.cache
+/build
