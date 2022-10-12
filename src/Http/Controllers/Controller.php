@@ -13,7 +13,7 @@ abstract class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    abstract protected function getList(Request $request): \Psr\Http\Message\ResponseInterface;
+    abstract protected function getList(Request $request): \Angecode\LaravelIproSoft\IproApiResponse;
 
     public function __invoke(Request $request)
     {

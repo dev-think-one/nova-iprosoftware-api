@@ -8,7 +8,7 @@ use NovaIprosoftwareApi\Http\Controllers\Controller;
 
 class ListController extends Controller
 {
-    protected function getList(Request $request): \Psr\Http\Message\ResponseInterface
+    protected function getList(Request $request): \Angecode\LaravelIproSoft\IproApiResponse
     {
         return IproSoftwareFacade::getBookingTagsList();
     }
