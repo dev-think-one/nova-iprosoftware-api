@@ -10,4 +10,6 @@ phpunit.xml
 /yarn.lock
 Thumbs.db
 /.php-cs-fixer.cache
+/.phpunit.cache
 /build
+auth.json
