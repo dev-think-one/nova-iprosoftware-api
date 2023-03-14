@@ -17,3 +17,5 @@ Route::get('/properties/get-property-rates', fn (NovaRequest $request) => inerti
 Route::get('/properties/get-property-custom-rates', fn (NovaRequest $request) => inertia('NovaIprosoftwareApiPropertiesGetPropertyCustomRates'));
 Route::get('/properties/get-property-extras', fn (NovaRequest $request) => inertia('NovaIprosoftwareApiPropertiesGetPropertyExtras'));
 Route::get('/properties/properties-offers', fn (NovaRequest $request) => inertia('NovaIprosoftwareApiPropertiesGetPropertyOffers'));
+
+Route::get('/bookings/index', fn (NovaRequest $request) => inertia('NovaIprosoftwareApiBookingsIndex'));

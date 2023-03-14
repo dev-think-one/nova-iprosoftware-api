@@ -10,6 +10,7 @@ import PropertiesGetPropertyRates from './pages/properties-pages/GetPropertyRate
 import PropertiesGetPropertyCustomRates from './pages/properties-pages/GetPropertyCustomRates';
 import PropertiesGetPropertyExtras from './pages/properties-pages/GetPropertyExtras';
 import PropertiesGetPropertyOffers from './pages/properties-pages/GetPropertiesOffers';
+import BookingsIndex from './pages/bookings-pages/Index.vue';
 
 Nova.booting((app, store) => {
   Nova.inertia('NovaIprosoftwareApiSettingsContactTypes', SettingsContactTypes);
@@ -26,5 +27,7 @@ Nova.booting((app, store) => {
   Nova.inertia('NovaIprosoftwareApiPropertiesGetPropertyCustomRates', PropertiesGetPropertyCustomRates);
   Nova.inertia('NovaIprosoftwareApiPropertiesGetPropertyExtras', PropertiesGetPropertyExtras);
   Nova.inertia('NovaIprosoftwareApiPropertiesGetPropertyOffers', PropertiesGetPropertyOffers);
+
+  Nova.inertia('NovaIprosoftwareApiBookingsIndex', BookingsIndex);
 });
 

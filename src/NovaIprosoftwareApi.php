@@ -42,6 +42,7 @@ class NovaIprosoftwareApi extends Tool
                 MenuItem::make('get-property-custom-rates', '/iprosoftware-api/properties/get-property-custom-rates'),
                 MenuItem::make('get-property-extras', '/iprosoftware-api/properties/get-property-extras'),
                 MenuItem::make('properties-offers', '/iprosoftware-api/properties/properties-offers'),
+                MenuItem::make('bookings', '/iprosoftware-api/bookings/index'),
             ])->collapsable(),
         ], 'library')
                           ->collapsable();
