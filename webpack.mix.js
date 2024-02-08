@@ -7,4 +7,4 @@ mix
   .js('resources/js/tool.js', 'js')
   .vue({ version: 3 })
   .sass('resources/sass/tool.scss', 'css')
-  .nova('yaroslawww/nova-iprosoftware-api');
+  .nova('think.studio/nova-iprosoftware-api');

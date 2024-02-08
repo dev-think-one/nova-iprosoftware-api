@@ -13,13 +13,13 @@ abstract class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    abstract protected function getList(Request $request): \Angecode\LaravelIproSoft\IproApiResponse;
+    abstract protected function getList(Request $request): \LaravelIproSoftwareApi\IproApiResponse;
 
     public function __invoke(Request $request)
     {
         try {
             $data = json_decode((string)$this->getList($request)->getBody(), true);
-        } catch (\Angecode\IproSoftware\Exceptions\IproSoftwareApiAccessTokenException $e) {
+        } catch (\IproSoftwareApi\Exceptions\IproSoftwareApiAccessTokenException $e) {
             return Response::json([
                 'response' => (array) $e->getResponse(),
             ], 500);

@@ -1,5 +1,5 @@
 {
-    "name": "yaroslawww/nova-iprosoftware-api",
+    "name": "think.studio/nova-iprosoftware-api",
     "description": "Laravel nova Iprosoftware api requests preview.",
     "keywords": [
         "nova",
@@ -23,7 +23,7 @@
     "require": {
         "php": "^8.1",
         "laravel/nova": "^4.0",
-        "yaroslawww/laravel-iprosoftware-api": "^3.0"
+        "think.studio/laravel-iprosoftware-api": "^4.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.15",
@@ -45,7 +45,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "NovaIprosoftwareApi\\ToolServiceProvider"
+                "NovaIprosoftwareApi\\ServiceProvider"
             ]
         }
     },
